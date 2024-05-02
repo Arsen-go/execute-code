@@ -33,7 +33,6 @@ app.post("/execute", async (req, res) => {
 
 app.get("/list", async (req, res) => {
   const body = [];
-
   for (const language of supportedLanguages) {
     body.push({
       language,
